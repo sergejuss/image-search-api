@@ -1,0 +1,1 @@
+An exercise to build a JavaScript app that allows you to search for images

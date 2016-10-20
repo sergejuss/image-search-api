@@ -1,0 +1,12 @@
+body {
+    width: 60%;
+    margin: 0px auto;
+    font-family: sans-serif;
+}
+p {
+    color: red;
+    font-family: monospace;
+}
+li {
+    margin: 10px 0;
+}
