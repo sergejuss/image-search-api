@@ -16,7 +16,7 @@
                 I can get the image URLs, alt text and page urls for a set of images relating to a given search string.
             </li>
             <li>
-                I can paginate through the responses by adding a ?offset=2 parameter to the URL.
+                I can paginate through the responses by adding a ?offset=10 parameter to the URL.
             </li> 
             <li>
                 I can get a list of the most recently submitted search strings.
@@ -26,28 +26,25 @@
             Example usage:
         </h2>
         <p>
-            https://sergejuss-url-shortener.herokuapp.com/new/https://www.google.com
+        You may query text ('q'), latitude ('lat') and longitude ('lon').
         </p>
         <p>
-            https://sergejuss-url-shortener.herokuapp.com/new/http://foo.com:80
+        You may paginate through the results by adding 'offset' parameter. Max value is 90.
         </p>
-        <h2>
-            Example output:
-        </h2>
-        <p>
-            { "original_url":"http://foo.com:80", "short_url":"https://sergejuss-url-shortener.herokuapp.com/10" }
+        <p class='code'>
+            https://sergejuss-image-search.herokuapp.com/search?q=vilnius
         </p>
-        <h2>
-            Usage:
-        </h2>
-        <p>
-            https://sergejuss-url-shortener.herokuapp.com/1
+        <p class='code'>
+            https://sergejuss-image-search.herokuapp.com/search?q=gaudi&lat=41.40348&lon=2.17442
         </p>
-        <h2>
-            Will redirect to:
-        </h2>
+        <p class='code'>
+            https://sergejuss-image-search.herokuapp.com/search?q=gaudi&lat=41.40348&lon=2.17442&offset=10
+        </p>
         <p>
-            https://www.google.com/
+            You may see the latest searches:
+        </p>
+        <p class='code'>
+            https://sergejuss-image-search.herokuapp.com/latest
         </p>        
     </div>
   </body>

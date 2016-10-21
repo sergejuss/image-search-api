@@ -3,7 +3,7 @@ body {
     margin: 0px auto;
     font-family: sans-serif;
 }
-p {
+.code {
     color: red;
     font-family: monospace;
 }
